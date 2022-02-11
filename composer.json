@@ -1,0 +1,49 @@
+{
+    "name": "xjaqil/laravel-siluai-sdk",
+    "description": "Silu Ai SDK for Laravel",
+    "homepage": "https://github.com/xjaqil/laravel-siluai-sdk",
+    "keywords": [
+        "silu-ai",
+        "sdk"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xjaqil",
+            "email": "xjaqil@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aqil\\SiluAi\\": "src/"
+        },
+        "files": [
+            "src/Kernel/Support/Helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Aqil\\SiluAi\\ServiceProvider"
+            ],
+            "aliases": {
+                "SiluAi": "\\Aqil\\SiluAi\\Facade"
+            }
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
