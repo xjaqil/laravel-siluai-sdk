@@ -83,7 +83,7 @@ class ServiceContainer extends Container
     {
         $base = [
             'http' => [
-                'timeout' => 2.0,
+                'timeout' => 5.0,
                 'base_uri' => 'https://api.xjslwt.com/',
             ],
         ];

@@ -8,7 +8,7 @@ return [
         /*
          * 指定 API 调用返回结果的类型：array(default)/collection/object/raw/自定义类名
          */
-        'response_type'     => 'array',
+        'response_type' => 'array',
 
         /*
          * 使用 Laravel 的缓存系统
@@ -22,20 +22,20 @@ return [
          *         debug/info/notice/warning/error/critical/alert/emergency
          * path：日志文件位置(绝对路径!!!)，要求可写权限
          */
-        'log'               => [
-            'default'  => env('APP_DEBUG', false) ? 'dev' : 'prod', // 默认使用的 channel，生产环境可以改为下面的 prod
+        'log' => [
+            'default' => env('APP_DEBUG', false) ? 'dev' : 'prod', // 默认使用的 channel，生产环境可以改为下面的 prod
             'channels' => [
                 // 测试环境
-                'dev'  => [
+                'dev' => [
                     'driver' => 'single',
-                    'path'   => '/tmp/micro-app.log',
-                    'level'  => 'debug',
+                    'path' => storage_path('logs/micro-app.log'),
+                    'level' => 'debug',
                 ],
                 // 生产环境
                 'prod' => [
                     'driver' => 'daily',
-                    'path'   => '/tmp/micro-app.log',
-                    'level'  => 'info',
+                    'path' => storage_path('logs/micro-app.log'),
+                    'level' => 'info',
                 ],
             ],
         ],
