@@ -12,6 +12,7 @@ use Aqil\SiluAi\Kernel\ServiceContainer;
  * @property \Aqil\SiluAi\OpenPlatform\Tts\Client $tts
  * @property \Aqil\SiluAi\OpenPlatform\Translate\Client $translate
  * @property \Aqil\SiluAi\OpenPlatform\Speech\Client $speech
+ * @property \Aqil\SiluAi\OpenPlatform\Ocr\Client $ocr
  * */
 class Application extends ServiceContainer
 {
