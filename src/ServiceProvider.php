@@ -10,16 +10,13 @@ use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
 class ServiceProvider extends LaravelServiceProvider
 {
-    /**
-     * Boot the provider.
-     */
+
     public function boot()
     {
+
     }
 
-    /**
-     * Setup the config.
-     */
+
     protected function setupConfig()
     {
         $source = realpath(__DIR__ . '/config.php');
@@ -29,9 +26,6 @@ class ServiceProvider extends LaravelServiceProvider
         $this->mergeConfigFrom($source, 'siluai');
     }
 
-    /**
-     * Register the provider.
-     */
     public function register()
     {
         $this->setupConfig();
@@ -45,7 +39,6 @@ class ServiceProvider extends LaravelServiceProvider
             if (empty(config('siluai.' . $name))) {
                 continue;
             }
-
 
             if (!empty(config('siluai.' . $name . '.app_id'))) {
                 $accounts = [

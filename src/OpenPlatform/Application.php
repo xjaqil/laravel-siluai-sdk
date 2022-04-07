@@ -21,7 +21,8 @@ class Application extends ServiceContainer
         Auth\ServiceProvider::class,
         Tts\ServiceProvider::class,
         Speech\ServiceProvider::class,
-        Translate\ServiceProvider::class
+        Translate\ServiceProvider::class,
+        Ocr\ServiceProvider::class
 
     ];
 
