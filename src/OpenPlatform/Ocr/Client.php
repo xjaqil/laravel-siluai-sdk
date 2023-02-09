@@ -10,7 +10,7 @@ use GuzzleHttp\Exception\GuzzleException;
 class Client extends BaseClient
 {
 
-    protected string $baseUri = 'https://api.xjslwt.com/';
+    protected string $baseUri = 'https://api.xjguoyu.cn/';
 
     /**
      * @throws GuzzleException
