@@ -3,8 +3,7 @@
 
 namespace Aqil\SiluAi;
 
-use Aqil\SiluAi\OpenPlatform\Application as Tts;
-use Aqil\SiluAi\Payment\Application as Payment;
+use Aqil\SiluAi\OpenPlatform\Application as OpenPlatform;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
 
@@ -31,8 +30,7 @@ class ServiceProvider extends LaravelServiceProvider
         $this->setupConfig();
 
         $apps = [
-            'payment' => Payment::class,
-            'tts' => Tts::class,
+            'open_platform' => OpenPlatform::class,
         ];
 
         foreach ($apps as $name => $class) {

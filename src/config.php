@@ -40,4 +40,15 @@ return [
             ],
         ],
     ],
+    /*
+ * 开放平台第三方平台
+ */
+    'open_platform' => [
+        'default' => [
+            'app_id' => env('WECHAT_OPEN_PLATFORM_APPID', ''),
+            'secret' => env('WECHAT_OPEN_PLATFORM_SECRET', ''),
+            'token' => env('WECHAT_OPEN_PLATFORM_TOKEN', ''),
+            'aes_key' => env('WECHAT_OPEN_PLATFORM_AES_KEY', ''),
+        ],
+    ],
 ];
